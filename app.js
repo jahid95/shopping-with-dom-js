@@ -33,6 +33,7 @@ document.getElementById('btn-panda').addEventListener('click', function(e){
 })
 
 document.getElementById('btn-vue').addEventListener('click', function(e){
+    serial++;
     console.log(e.target.parentNode.parentNode.children[1].value);
     const prdName = e.target.parentNode.parentNode.children[0].innerText;
     const prdPrice = e.target.parentNode.parentNode.children[1].value;
