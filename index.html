@@ -48,11 +48,11 @@
                   <img src="img/coffee.jpg" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>Price: <span>00</span></p>
-                  <p>Quantity: <span>00</span></p>
+                  <h2 id="first-p-title" class="card-title">Coffee</h2>
+                  <p>Price: $<span id="coffee-price">5</span></p>
+                  <p>Quantity: <span id="coffee-qty">2</span></p>
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button id="btn-coffee" class="btn btn-primary">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -74,11 +74,11 @@
                   <img src="img/panda.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>Price: <span>00</span></p>
-                  <p>Quantity: <span>00</span></p>
+                  <h2 class="card-title">Panda</h2>
+                  <p>Price: <span>10</span></p>
+                  <p>Quantity: <span>5</span></p>
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button id="btn-panda" class="btn btn-primary">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -100,11 +100,11 @@
                   <img src="img/vue-js.jpg" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>Price: <span>00</span></p>
-                  <p>Quantity: <span>00</span></p>
+                  <h2 class="card-title">Vue Js</h2>
+                  <input type="text" placeholder="Price" class="input input-bordered input-primary w-full max-w-xs" />
+                  <input type="number" placeholder="Quantity" class="input input-bordered input-primary w-full max-w-xs" />
                   <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button id="btn-vue" class="btn btn-primary">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -115,16 +115,15 @@
                 <table class="table w-full">
                   <!-- head -->
                   <thead>
-                    <tr>
-                      <th></th>
-                      <th>SL No.</th>
+                    <tr>                     
+                      <th class="bg-teal-200">SL No.</th>
                       <th>Product Name</th>
-                      <th>Quantity</th>
+                      <th class="bg-teal-200">Quantity</th>
                       <th>Price</th>
-                      <th>Amount</th>
+                      <th class="bg-teal-200">Amount</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="data-container">
                     <!-- row 1 -->
                     <!-- <tr>
                       <th>1</th>
@@ -138,6 +137,9 @@
         </div>
     </section>
   </main>
+
+  <!-- js link0 -->
+  <script src="app.js"></script>
 
 </body>
 
